@@ -1,0 +1,162 @@
+@font-face {
+    font-family: 'Prata';
+    src: url('subset-Prata-Regular.woff2') format('woff2'),
+        url('subset-Prata-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PT Sans';
+    src: url('subset-PTSans-Regular.woff2') format('woff2'),
+        url('subset-PTSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.wrapper {
+  background-image: url(../image/bg_main.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 16px;
+  margin: 0 auto;
+  color: #f9fcfc;
+  padding-left: 19px;
+  box-sizing: border-box;
+}
+
+* {
+   box-sizing: inherit;
+}
+
+.promo {
+  padding-bottom: 25px;
+}
+
+.header__logo {
+  font-family: Prata, serif;
+  font-size: 30px;
+  color: #eec643;
+  padding-top: 24px;
+  margin-bottom: 98px;
+}
+
+.promo__title {
+  font-family: Prata, serif;
+  font-size: 32px;
+  line-height: 42px;
+  margin-bottom: 24px;  
+}
+
+.promo__subtitle {
+  margin-bottom: 90px;
+}
+
+button {
+  height: 60px;
+  width: 288px;
+  background-color: #eec643;
+  border: none;
+}
+
+.lesson {
+  text-decoration: none;
+  color: #f9fcfc;
+}
+
+.grow__title,
+.pace__title {
+  font-family: Prata, serif;
+  font-size: 30px;
+  line-height: 30px;
+  color: #021a23;
+  border-top: 1px solid #eec643;
+  border-bottom: 1px solid #eec643;
+  padding: 12px 0 10px 11px;
+  margin-bottom: 12px;
+}
+
+.grow__vocals,
+.pace__composition {
+  background-image: url(../image/vocals.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-bottom: 17px;
+}
+
+.grow__vocals-title,
+.grow__quitar-title,
+.grow__piano-title,
+.pace__composition-title {
+  padding-top: 31px;
+  padding-left: 11px;
+  padding-bottom: 1.2px;
+  margin: 0;
+}
+
+.grow__vocals-subtitle,
+.grow__quitar-subtitle,
+.pace__composition-subtitle {
+  margin: 0;
+  padding: 0 89px 58px 11px;
+}
+
+.grow__quitar {
+  background-image: url(../image/quitar.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-bottom: 17px;
+}
+
+.row {
+  display: block;
+  font-size: 0;
+  position: relative;
+}
+
+.grow__piano {
+  display: inline-block;
+  background-image: url(../image/piano.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 75%;
+  font-size: 16px;
+}
+
+.grow__piano-subtitle {
+  margin: 0;
+  padding: 0 44px 54.2px 11px;
+}
+
+.grow__all {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  width: 25%;
+  transform: rotate(-90deg);
+  background-color: #eec643;
+  font-size: 16px;
+  bottom: 9px;
+  padding-right: 5px;
+
+}
+
+.grow__all-button {
+  display: inline-block;
+  width: 144px;
+  height: 60px;
+  /*text-align: left;*/
+     
+}
+
+.grow__all-link {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  padding-right: 24px;
+  padding-left: 15px;
+
+}
