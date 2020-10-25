@@ -31,7 +31,32 @@
 
 * {
    box-sizing: inherit;
-   /*margin-bottom: 17px;*/
+ }
+
+ h2 {
+  font-family: Prata, serif;
+  font-size: 30px;
+  line-height: 30px;
+  color: #021a23;
+  border-top: 1px solid #eec643;
+  border-bottom: 1px solid #eec643;
+  padding: 12px 10px 10px 11px;
+  margin-bottom: 12px;
+  margin-right: 60px;
+}
+
+h3 {
+  padding-top: 31px;
+  padding-left: 11px;
+  padding-bottom: 1.2px;
+  margin: 0;
+}
+
+button {
+  height: 60px;
+  width: 288px;
+  background-color: #eec643;
+  border: none;
 }
 
 .promo {
@@ -59,28 +84,9 @@
   margin-right: 90px;
 }
 
-button {
-  height: 60px;
-  width: 288px;
-  background-color: #eec643;
-  border: none;
-}
-
 .lesson {
   text-decoration: none;
   color: #f9fcfc;
-}
-
-h2 {
-  font-family: Prata, serif;
-  font-size: 30px;
-  line-height: 30px;
-  color: #021a23;
-  border-top: 1px solid #eec643;
-  border-bottom: 1px solid #eec643;
-  padding: 12px 10px 10px 11px;
-  margin-bottom: 12px;
-  margin-right: 60px;
 }
 
 .grow__vocals {
@@ -88,13 +94,6 @@ h2 {
   background-repeat: no-repeat;
   background-size: 100%;
   margin-bottom: 17px;
-}
-
-h3 {
-  padding-top: 31px;
-  padding-left: 11px;
-  padding-bottom: 1.2px;
-  margin: 0;
 }
 
 .grow__vocals-subtitle,
@@ -136,7 +135,11 @@ h3 {
 
 .grow__all-button,
 .pace__lesson-button {
+  display: inline-block;
+  width: 144px;
+  height: 60px;
   position: absolute;
+  font-size: 16px; 
   font-family: 'PT Sans', sans-serif;
   color: #213127;
   transform: rotate(-90deg);
@@ -144,13 +147,9 @@ h3 {
   top: -60px;
   right: 0;
   transform-origin: bottom right;
-  display: inline-block;
-  width: 144px;
-  height: 60px;
   text-align: left;
   text-decoration: none;
-  padding-left: 15px; 
-  font-size: 16px;    
+  padding-left: 15px;   
 }
 
 .pace__composition {
@@ -178,9 +177,13 @@ h3 {
   height: 144px;  
 }
 
+.contact__title {
+  margin-bottom: 28px;
+}
+
 .contact__address {
   color: #000;
-  line-height: 22px;
+  margin-bottom: 11px;
 }
 
 .contact__tel-link {
