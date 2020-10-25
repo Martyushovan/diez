@@ -70,16 +70,16 @@ button {
   color: #f9fcfc;
 }
 
-.grow__title,
-.pace__title {
+h2 {
   font-family: Prata, serif;
   font-size: 30px;
   line-height: 30px;
   color: #021a23;
   border-top: 1px solid #eec643;
   border-bottom: 1px solid #eec643;
-  padding: 12px 0 10px 11px;
+  padding: 12px 10px 10px 11px;
   margin-bottom: 12px;
+  margin-right: 60px;
 }
 
 .grow__vocals {
@@ -89,12 +89,7 @@ button {
   margin-bottom: 17px;
 }
 
-.grow__vocals-title,
-.grow__quitar-title,
-.grow__piano-title,
-.pace__composition-title,
-.pace__result-title,
-.pace__studio-title {
+h3 {
   padding-top: 31px;
   padding-left: 11px;
   padding-bottom: 1.2px;
@@ -120,6 +115,7 @@ button {
   display: block;
   font-size: 0;
   position: relative;
+  margin-bottom: 32px;
 }
 
 .grow__piano {
@@ -137,37 +133,23 @@ button {
   padding: 0 44px 54.2px 11px;
 }
 
-.grow__all,
-.pace__lesson {
-  position: absolute;
-  content: "";
-  display: inline-block;
-  width: 25%;
-  transform: rotate(-90deg);
-  background-color: #eec643;
-  font-size: 16px;
-  bottom: 9px;
-  padding-right: 5px;
-
-}
-
 .grow__all-button,
 .pace__lesson-button {
+  position: absolute;
+  font-family: 'PT Sans', sans-serif;
+  color: #213127;
+  transform: rotate(-90deg);
+  background-color: #eec643;
+  top: -60px;
+  right: 0;
+  transform-origin: bottom right;
   display: inline-block;
   width: 144px;
   height: 60px;
   text-align: left;
-     
-}
-
-.grow__all-link,
-.pace__lesson-link {
-  font-family: 'PT Sans', sans-serif;
-  font-size: 16px;
-  color: #213127;
   text-decoration: none;
-  padding-right: 24px;
-  padding-left: 15px;
+  padding-left: 15px; 
+  font-size: 16px;    
 }
 
 .pace__composition {
@@ -185,8 +167,23 @@ button {
 }
 
 .pace__studio {
+  display: inline-block;
+  font-size: 16px;  
   background-image: url(../image/studio.png);
   background-repeat: no-repeat;
   background-size: 100%;
   margin-bottom: 17px;
+  width: 75%;
+  height: 144px;  
 }
+
+.contact__address {
+  color: #000;
+  line-height: 22px;
+}
+
+.contact__tel {
+  text-decoration: none;
+  color: #000;
+}
+
