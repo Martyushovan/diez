@@ -31,6 +31,7 @@
 
 * {
    box-sizing: inherit;
+   /*margin-bottom: 17px;*/
 }
 
 .promo {
@@ -182,8 +183,16 @@ h3 {
   line-height: 22px;
 }
 
-.contact__tel {
+.contact__tel-link {
   text-decoration: none;
   color: #000;
+}
+
+.contact__tel {
+   margin-bottom: 17px;
+}
+
+.map {
+  margin-bottom: 16px;
 }
 
