@@ -6,6 +6,8 @@
   <title>diez</title>
   <link rel="stylesheet" type="text/css" href="style/normalize.css">
   <link rel="stylesheet" type="text/css" href="style/style.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
   <script src="https://api-maps.yandex.ru/2.1/?apikey=4b8e52c5-ec31-469e-ac8a-e7af9c1a87a5&lang=ru_RU" type="text/javascript">
     </script>
      <script>
@@ -30,73 +32,183 @@
 
   </script>
   </head>
-<body>
+<body>   
 
-  <div class="wrapper">
-  <header class="header">
-    <div class="header__logo">Diez</div>
-  </header>
+  <main>    
+   <div class="promo">
 
-  <main>
-    
-    <div class="promo">
-      <h1 class="promo__title">Школа музыкального искусства</h1>
-     <p class="promo__subtitle">Научим петь, играть на инструментах, получать удовольствие от музыки и не боятся сцены</p>
-     <button><a class="lesson" href="#">ВВОДНЫЙ УРОК</a></button>
-   </div> 
+    <header class="header">
+     <div class="container">
+      <div class="row">
+       <div class="header__logo">Diez</div>
+       <button id="nav-toggle" class="header__menu" type="button"><span class="header__menu-btn"></span></button>
+       <nav class="header__nav" id="nav">
+        <a class="header__nav-item">НАПРАВЛЕНИЯ</a>
+        <a class="header__nav-item">О ШКОЛЕ</a>
+        <a class="header__nav-item">ВИДЕО</a>
+        <a class="header__nav-item">КОНТАКТЫ</a>
+       </nav>
+      </div>
+     </div>
+    </header>
+    <!-- end header -->
 
-   <section class="grow">
+    <div class="container">
+     <div class="row">    
+      <div class="col-9"> 
+
+       <div class="promo__mobile-only">
+        <h1 class="promo__mobile-only-title">Школа музыкального искусства</h1>
+        <p class="promo__mobile-only-subtitle">Научим петь, играть на инструментах, получать удовольствие от музыки и не боятся сцены</p>
+        <button class="promo__mobile-only-btn">вводный урок</button>
+       </div>
+       <!-- end mobile -->
+
+       <div class="promo__desktop-only">
+        <h1 class="promo__desktop-only-title">Diez - школа музыкального искусства</h1>
+        <p class="promo__desktop-only-subtitle">Научим петь, играть на инструментах, не боятся сцены и получать удовольствие от музыки</p>
+       </div>
+       <!-- end desktop -->
+      </div>
+      <!-- end col-9 -->  
+      <div class="col-3">
+         
+       <form class="form" action="" method="post">   
+
+        <p>Вводный урок<span>Попробуй любые направлния бесплатно</span></p>
+
+        <input type="text" placeholder="Имя" name="name" />
+        <input type="text" placeholder="Телефон" name="phone" />   
+        <select name="direction" id="direction">
+         <option disabled selected>Выберите направление</option>
+         <option value="0">Вокал</option>
+         <option value="1">Гитара</option>
+         <option value="2">Фортепиано</option>
+        </select>   
+        <button>записаться</button>
+       </form>
+      </div>
+      <!-- end col-3 -->
+  </div>
+  <!-- end promo -->
+   
+    </div>  
+
+  </div><!-- end promo -->
+
+   <!-- <section class="grow">
+    <div class="container">
+      <div class="row">
+        
     <h2 class="grow__title">Растим музыкантов</h2>
 
-    <article class="grow__vocals">
+<div class="col-5 offset-1">
+  
+    <article class="grow__vocals card">
       <h3 class="grow__vocals-title">Вокал</h3>
       <p class="grow__vocals-subtitle">Пой как Селин Дион и Эми Вайнхаус</p>
     </article>
+</div>
 
-    <article class="grow__quitar">
+<div class="col-6">
+  
+    <article class="grow__quitar card">
       <h3 class="grow__quitar-title">Гитара</h3>
       <p class="grow__quitar-subtitle">Начни играть как Джими Хендрикс</p>
     </article>
+</div>
 
-    <div class="row">
-      <article class="grow__piano">
+ <div class="col-5 offset-1">
+   
+      <article class="grow__piano card">
        <h3 class="grow__piano-title">Фортепиано</h3>
        <p class="grow__piano-subtitle">Чувствуй клавиши, как Людовико Эйнауди</p>
       </article>
-      <div class="grow__all">
+ </div>
+<div class="col-3">
+  
+      <article class="grow__piano card">
+       <h3 class="grow__piano-title">Фортепиано</h3>
+       <p class="grow__piano-subtitle">Чувствуй клавиши, как Людовико Эйнауди</p>
+      </article>
+</div>
+
+<div class="col-3">
+  
+      <div class="grow__all card">
         <button class="grow__all-button">все направления
       </button>
+      </div>
+</div>
+   
       </div>
     </div>
    </section>
 
    <section class="pace">
+<div class="container"><div class="row">
+  
+
     <h2 class="pace__title">Задаем темп</h2>
 
+<div class="col-3 offset-top">
+  
     <article class="pace__composition">
       <h3 class="pace__composition-title">Состав</h3>
       <p class="pace__composition-subtitle">Учись только у префессионалов</p>
     </article>
+</div>
 
+<div class="col-3 offset-top">
+  
     <article class="pace__result">
       <h3 class="pace__result-title">Результат</h3>
       <p class="pace__result-subtitle">Выступай на отчетных концертах</p>
     </article>
+</div>
 
-    <div class="row">
-      <article class="pace__studio">
+<div class="col-3">
+  
+      <article class="pace__studio ">
        <h3 class="pace__studio-title">Студия</h3>
        <p class="pace__studio-subtitle">Записывай песни каждый месяц</p>
       </article>
-      <div class="pace__lesson">
+</div>
+
+<div class="col-3">
+  
+      <div class="pace__lesson mobile-only">
         <button class="pace__lesson-button">вводный урок</button>
       </div>
-    </div>
+
+      <form class="form pace__lesson" action="" method="post">
+     
+
+    <p>Вводный урок<span>Попробуй любые направлния бесплатно</span></p>
+
+    <input type="text" placeholder="Имя" name="name" />
+    <input type="text" placeholder="Телефон" name="phone" />
+   
+      <select name="direction" id="direction">
+        <option disabled selected>Выберите направление</option>
+        <option value="0">Вокал</option>
+        <option value="1">Гитара</option>
+        <option value="2"></option>
+        <option value="3"></option>
+      </select>
+   
+    <button>записаться</button>
+</form>
+</div>
+  
+</div></div>
    </section>
 
    <section class="school">
-     <h2 class="school__tittle">В стенах школы</h2>
+     <div class="carousel">
+       <h2 class="school__tittle">В стенах школы</h2>
      <a href=""><img src="image/video_card_img_1.png" alt=""></a>
+     </div>
    </section>
 
    <section class="contact">
@@ -106,11 +218,15 @@
      <div class="map" id="map" style="width: 289px; height: 216px"></div>
      <button><a class="lesson" href="#">ВВОДНЫЙ УРОК</a></button>
    </section>
-    
+     -->
 
   </main>
 
-  </div>
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/script.js"></script>
+
+
   
 </body>
 </html>
