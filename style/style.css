@@ -40,7 +40,7 @@ body {
 }
 
 h3 {
-  font-size: 16px;
+  font-size: 18px;
   padding-top: 31px;
   padding-left: 11px;
   padding-bottom: 1.2px;
@@ -52,13 +52,17 @@ img {
   object-fit: cover;
 }
 
-.promo__desktop-only,
-.form {
+.promo__desktop-only {
+  display: none;
+}
+
+.promo__form {
   display: none;
 }
 
 .promo {
-  background-image: url(../image/bg_main.png);
+  background-image: url(../image/bg_main1280.png);
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 30px;
@@ -70,11 +74,12 @@ img {
   width: 100%;
   padding-left: 20px;
   padding-right: 20px;
+  position: relative;
 }
 
 .row {
   display: block;
-  position: relative;
+  /*position: relative;*/
   margin-bottom: 32px;
 }
 
@@ -179,18 +184,21 @@ img {
   display: none;
 }
 
-.col-3 {
+/*.col-3 {
   display: none;
-}
+}*/
 
 .grow__vocals {
   background-image: url(../image/vocals.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .grow__vocals-subtitle,
 .grow__quitar-subtitle,
 .pace__composition-subtitle,
-.pace__result-subtitle {
+.pace__result-subtitle,
+.mobile-only {
   font-size: 16px;
   margin: 0;
   padding: 0 89px 58px 11px;
@@ -198,54 +206,160 @@ img {
 
 .grow__quitar {
   background-image: url(../image/quitar.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.piano {
+  /*display: flex;*/
+  /*width: 100%;*/
+  /*justify-content: space-between;*/
+  /*font-size: 0; */
 }
 
 .grow__piano {
+  max-width: 100%;
+  margin-right: 76px;
   background-image: url(../image/piano.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   font-size: 16px;
+}
+
+.row__piano {
+  width: 100%;
 }
 
 .grow__piano-subtitle,
 .pace__studio-subtitle {
   margin: 0;
-  padding: 0 44px 54.2px 11px;
+  padding: 0 0px 56.2px 11px;
 }
 
 .grow__all-button,
 .pace__lesson-button {
-  display: inline-block;
-  width: 144px;
+  /*flex-direction: column;*/
+  /*width: 20%;*/
+  /*display: inline-block;*/
+  width: 147px;
   height: 60px;
-  position: absolute;
+  position: absolute  ;
   font-size: 16px; 
   font-family: 'PT Sans', sans-serif;
   color: #213127;
   transform: rotate(-90deg);
   background-color: #eec643;
-  top: -60px;
-  right: 0;
+  bottom: 147px;
+  right: 20px;
+  /*top: 270px;*/
+  /*left: 117px;*/
+  /*top: -60px;*/
+  border: none;
   transform-origin: bottom right;
   text-align: left;
   text-decoration: none;
   padding-left: 15px;   
 }
 
-.offset-top {
+.form,
+.pace__lesson {
+  display: none;
+} 
+
+.grow__lecture {
   display: none;
 }
 
 .pace__composition {
   background-image: url(../image/composition.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 30px;
 }
 
 .pace__result {
   background-image: url(../image/result.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 30px;  
 }
 
 .pace__studio {
+  max-width: 100%;
+  margin-right: 76px;
   font-size: 16px;  
   background-image: url(../image/studio.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 144px;  
+}
+
+
+
+.school__video {
+  width: 75%;
+  background-image: url(../image/video_card_img_1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.school__video-subtitle {
+  padding-left: 11px;
+  margin: 0;
+}
+
+.school__video-text {
+  padding-top: 140px;
+  padding-bottom: 17px;
+
+}
+
+.play {
+  position: absolute;
+  right: 0;
+  top: 90px;
+  margin: 0;
+  left: 0;
+  margin: auto;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 17.5px 0 17.5px 28px;
+  border-color: transparent transparent transparent #eec643;
+}
+
+.cont {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.str1 {
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+  background-color: #fff;
+  border-left: 1px solid #eec643;
+  border-bottom: 1px solid #eec643;
+}
+
+.school__video {
+  /*width: 75%;*/
+  background-image: url(../image/video_card_img_1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*position: relative;*/
+}
+
+.str2 {
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+  background-color: #fff;
+  border-right: 1px solid #eec643;
+  border-top: 1px solid #eec643;
 }
 
 .contact__title {
@@ -267,22 +381,28 @@ img {
 }
 
 .map {
+  /*display: block;*/
   margin-bottom: 16px;
   max-width: 100%;
   height: auto;
+}
+
+.map__container {
+  width: 100%;
 }
 
 @media (min-width: 1280px) {
 
   .container {
     margin: 0 auto;
-    width: 1280px;
+    width: 1170px;
     padding-left: 0;
     padding-right: 0;
   }
 
   .mobile-only,
-  .header__menu {
+  .header__menu,
+  .promo__mobile-only-btn {
   display: none;
 }
 
@@ -314,12 +434,16 @@ img {
   margin-left: 30px;
 }
 
+ .promo__form {
+    display: block;
+ }
+
 .promo {
   background-image: url(../image/bg_main1280.png);
   background-repeat: no-repeat;
   background-size: cover; 
   margin-bottom: 20px; 
-}
+ }
 
 .desktop-only {
   display: flex;
@@ -354,8 +478,6 @@ img {
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -15px;
-  margin-right: -15px;
 }
 
 .col-1,
@@ -370,8 +492,8 @@ img {
 .col-10,
 .col-11,
 .col-12 {
-  padding-left: 15px;
-  padding-right: 15px;
+ /* padding-left: 15px;
+  padding-right: 15px;*/
 }
 
 .col-1 {
@@ -422,6 +544,20 @@ img {
   transform: rotate(-90deg);
 }
 
+.grow__vocals-subtitle,
+.desktop-only {
+
+}
+
+.promo__info {
+  width: 850px;
+  margin-right: 50px;
+}
+
+.promo__form {
+  display: block;
+  width: 270px;
+}
 /*.grow__all,
 .grow__all-button {
   
@@ -453,6 +589,18 @@ img {
   position: absolute;
   left: 0;
   top: 0; 
+}
+
+.grow__lecture {
+  background-image: url(../image/lecture.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.grow__lecture-subtitle {
+  font-size: 16px;
+  margin: 0;
+  padding: 0 89px 58px 11px;
 }
 
 .pace__composition,

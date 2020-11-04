@@ -55,7 +55,7 @@
 
     <div class="container">
      <div class="row">    
-      <div class="col-9"> 
+      <div class="promo__info"> 
 
        <div class="promo__mobile-only">
         <h1 class="promo__mobile-only-title">Школа музыкального искусства</h1>
@@ -71,7 +71,7 @@
        <!-- end desktop -->
       </div>
       <!-- end col-9 -->  
-      <div class="col-3">
+      <div class="promo__form">
          
        <form class="form" action="" method="post">   
 
@@ -79,6 +79,7 @@
 
         <input type="text" placeholder="Имя" name="name" />
         <input type="text" placeholder="Телефон" name="phone" />   
+       </form>
         <select name="direction" id="direction">
          <option disabled selected>Выберите направление</option>
          <option value="0">Вокал</option>
@@ -86,7 +87,6 @@
          <option value="2">Фортепиано</option>
         </select>   
         <button>записаться</button>
-       </form>
       </div>
       <!-- end col-3 -->
      </div>  <!-- end row -->   
@@ -95,57 +95,47 @@
 
   <section class="grow">
    <div class="container">
+    <h2 class="grow__desktop-only">Растим музыкантов</h2>
     <div class="row">
         
-    <h2 class="grow__desktop-only">Растим музыкантов</h2>
 
-<div class="col-6 offset-1">
+<div class="grow__vocals">
   
-    <article class="grow__vocals card">
+    <article class=" card">
       <h3 class="grow__vocals-title">Вокал</h3>
-      <p class="grow__vocals-subtitle">Пой как Селин Дион и Эми Вайнхаус</p>
+      <p class="grow__vocals-subtitle mobile-only">Пой как Селин Дион и Эми Вайнхаус</p>
+      <p class="grow__vocals-subtitle desktop-only">Академический рок, эстрадный джазовый</p>
     </article>
 </div>
 
-<div class="col-5">
+<div class="grow__quitar">
   
-    <article class="grow__quitar card">
+    <article class=" card">
       <h3 class="grow__quitar-title">Гитара</h3>
       <p class="grow__quitar-subtitle">Начни играть как Джими Хендрикс</p>
     </article>
 </div>
 
- <div class="col-5 offset-1">
+ <div class="piano">
    
-      <article class="grow__piano card">
+      <div class="row__piano">
+        <article class="grow__piano">
        <h3 class="grow__piano-title">Фортепиано</h3>
        <p class="grow__piano-subtitle">Чувствуй клавиши, как Людовико Эйнауди</p>
-      </article>
- </div>
+    </article>
 
-<div class="col-3">
-  
-      <article class="grow__
-lecture card">
-       <h3 class="grow__piano-title">Фортепиано</h3>
-       <p class="grow__piano-subtitle">Чувствуй клавиши, как Людовико Эйнауди</p>
-      </article>
-</div>
 
-<div class="col-3">
-  
-      <article class="grow__piano card">
-       <h3 class="grow__piano-title">Фортепиано</h3>
-       <p class="grow__piano-subtitle">Чувствуй клавиши, как Людовико Эйнауди</p>
-      </article>
-</div>
-
-<div class="col-3">
-  
-      <div class="grow__all card">
-        <button class="grow__all-button">все направления
+    <button class="grow__all-button">все направления
       </button>
       </div>
+      
+
+  
+      <article class="grow__lecture card">
+       <h3 class="grow__lecture-title">Лекции</h3>
+       <p class="grow__lecture-subtitle">Подтяни свои знания в теории музыки</p>
+      </article>
+
 </div>
    
       </div>
@@ -184,9 +174,8 @@ lecture card">
 
 <div class="col-3">
   
-      <div class="pace__lesson mobile-only">
-        <button class="pace__lesson-button">вводный урок</button>
-      </div>
+              <button class="pace__lesson-button">вводный урок</button>
+     
 
       <form class="form pace__lesson" action="" method="post">
      
@@ -211,20 +200,37 @@ lecture card">
 </div></div>
    </section>
 
-   <section class="school">
-     <div class="carousel">
+   <div class="container">
+
+     <section class="school">
+    
        <h2 class="school__tittle">В стенах школы</h2>
-     <a href=""><img src="image/video_card_img_1.png" alt=""></a>
-     </div>
+  
+      <div class="cont">
+        <span class="str1"></span>
+        <div class="school__video">
+         <div class="school__video-text">
+          <h3>Зимняя вишня</h3>
+          <p class="school__video-subtitle">Финальный концерт 2018 года</p>
+          <span class="play"></span>
+         </div>
+       </div>
+        
+        <span class="str2"></span>
+      </div>
+   
    </section>
 
    <section class="contact">
      <h2 class="contact__title">Ждем тебя</h2>
      <p class="contact__address">СПб, 6-я Линия ВО 42</p>
      <div class="contact__tel"><a class="contact__tel-link" href="tel:+78125665656">+7 (812) 566 56 56</a></div>
-     <div class="map" id="map" style="width: 289px; height: 216px"></div>
+     <div class="map__container">
+       <div class="map" id="map" style="width: 289px; height: 216px"></div>
+     </div>
      <button class="promo__mobile-only-btn">вводный урок</button>
    </section>
+   </div>
     
 
   </main>
