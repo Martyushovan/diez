@@ -389,7 +389,8 @@ img {
 
   .mobile-only,
   .header__menu,
-  .promo__mobile-only-btn {
+  .promo__mobile-only-btn,
+  .promo__mobile-only {
   display: none;
 }
 
@@ -406,6 +407,8 @@ img {
 .header__logo {
   display: inline-block;
   margin: 0;
+  margin-bottom: 144.6px;
+  margin-top: 15px;
 }
 
 .header__nav {
@@ -413,7 +416,7 @@ img {
   margin-left: auto;
   font-size: 16px;
   color: #021a23;
-  margin-top: 20px;
+  margin-top: 50px;
   margin-bottom: 20px;
 }
 
@@ -432,9 +435,14 @@ img {
   margin-bottom: 20px; 
  }
 
-.desktop-only {
+ .promo__desktop-only {
+  display: block;
+  padding-top: 106px;
+ }
+
+/*.desktop-only {
   display: flex;
-}
+}*/
 
 .promo__desktop-only-title {
   font-family: Prata, serif;
@@ -450,6 +458,7 @@ img {
   font-size: 20px;
   line-height: 28px;
   padding-right: 150px;
+  margin-bottom: 297px;
 }
 
 .promo__btn {
@@ -499,6 +508,7 @@ img {
   background-color: #021a23;
   color: white;
   padding: 0;
+  margin-bottom: 146px;
 }
 
 .promo__form-input {
