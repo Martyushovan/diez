@@ -237,9 +237,6 @@ img {
 
 .grow__all-button,
 .pace__lesson-button {
-  /*flex-direction: column;*/
-  /*width: 20%;*/
-  /*display: inline-block;*/
   width: 147px;
   height: 60px;
   position: absolute  ;
@@ -250,9 +247,6 @@ img {
   background-color: #eec643;
   bottom: 147px;
   right: 20px;
-  /*top: 270px;*/
-  /*left: 117px;*/
-  /*top: -60px;*/
   border: none;
   transform-origin: bottom right;
   text-align: left;
@@ -329,13 +323,13 @@ img {
   border-color: transparent transparent transparent #eec643;
 }
 
-.cont {
+.container__video {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-.str1 {
+.arrow-before {
   width: 20px;
   height: 20px;
   transform: rotate(45deg);
@@ -345,15 +339,13 @@ img {
 }
 
 .school__video {
-  /*width: 75%;*/
   background-image: url(../image/video_card_img_1.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  /*position: relative;*/
 }
 
-.str2 {
+.arrow-after {
   width: 20px;
   height: 20px;
   transform: rotate(45deg);
@@ -381,14 +373,9 @@ img {
 }
 
 .map {
-  /*display: block;*/
   margin-bottom: 16px;
   max-width: 100%;
   height: auto;
-}
-
-.map__container {
-  width: 100%;
 }
 
 @media (min-width: 1280px) {
@@ -454,8 +441,8 @@ img {
   font-size: 55px;
   line-height: 55px;
   color: #f9fcfc;
- /* margin-bottom: 13.6px;
-  margin-left: 17px;*/
+  margin-bottom: 13.6px;
+  margin-left: 17px;
 }
 
 .promo__desktop-only-subtitle {
@@ -469,11 +456,66 @@ img {
   display: none;
 }
 
-/*.promo__btn-desc {
-  width: 269px;
-  background-color: #fff;
-  border: 1px solid #000;
-}*/
+.promo__info {
+  width: 850px;
+  margin-right: 50px;
+}
+
+.promo__form {
+  display: block;
+  width: 270px;
+  height: 420px;
+  border-width: 2px;
+  border-color: #021a23;
+  border-style: solid;
+  background-color: #fbf6e4;
+  position: relative;
+  box-sizing: border-box; 
+}
+
+.promo__form-title {
+  font-size: 30px;
+  font-family: "PT Sans", serif;
+  line-height: 40px;
+  color: #021a23;
+  border: none;
+  padding-left: 29px;
+  margin: 0 auto;
+}
+
+.promo__form-subtitle {
+  font-size: 20px;
+  font-family: "PT Sans", serif;
+  color: #021a23;
+  line-height: 28px;
+  padding-left: 29px;
+}
+
+.promo__form-btn {
+  font-size: 20px;
+  height: 70px;
+  width: 268px;
+  border: none;
+  background-color: #021a23;
+  color: white;
+  padding: 0;
+}
+
+.promo__form-input {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  border-bottom: 2px solid black;
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-left: 15px;
+  width: 86.5%;
+}
+
+.promo__form-select {
+  width: 86.5%;
+  color: #596063;
+  margin-bottom: 90px;
+}
 
 .row {
   display: flex;
@@ -549,10 +591,10 @@ img {
 
 }
 
-.promo__info {
+/*.promo__info {
   width: 850px;
   margin-right: 50px;
-}
+}*/
 
 .promo__form {
   display: block;

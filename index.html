@@ -71,22 +71,23 @@
        <!-- end desktop -->
       </div>
       <!-- end col-9 -->  
-      <div class="promo__form">
+      <div class="promo__form col-3">
          
-       <form class="form" action="" method="post">   
+       <form action="" method="post">   
 
-        <p>Вводный урок<span>Попробуй любые направлния бесплатно</span></p>
+        <h2 class="promo__form-title">Вводный урок</h2>
+          <p class="promo__form-subtitle">Попробуй любые направлния бесплатно</p>
 
-        <input type="text" placeholder="Имя" name="name" />
-        <input type="text" placeholder="Телефон" name="phone" />   
+        <input class="promo__form-input" type="text" placeholder="Имя" name="name" />
+        <input class="promo__form-input" type="text" placeholder="Телефон" name="phone" />   
        </form>
-        <select name="direction" id="direction">
+        <select class="promo__form-input promo__form-select" name="direction" id="direction">
          <option disabled selected>Выберите направление</option>
          <option value="0">Вокал</option>
          <option value="1">Гитара</option>
          <option value="2">Фортепиано</option>
         </select>   
-        <button>записаться</button>
+        <button class="promo__form-btn">записаться</button>
       </div>
       <!-- end col-3 -->
      </div>  <!-- end row -->   
@@ -164,26 +165,29 @@
     </article>
 </div>
 
-<div class="col-3">
+<!-- <div class="col-3"> -->
   
       <article class="pace__studio ">
        <h3 class="pace__studio-title">Студия</h3>
        <p class="pace__studio-subtitle">Записывай песни каждый месяц</p>
       </article>
-</div>
+<!-- </div> -->
 
-<div class="col-3">
+<!-- <div class="col-3"> -->
   
               <button class="pace__lesson-button">вводный урок</button>
      
 
-      <form class="form pace__lesson" action="" method="post">
      
-
-    <p>Вводный урок<span>Попробуй любые направлния бесплатно</span></p>
+<div class="promo__form">
+  
+    <h2>Вводный урок</h2>
+    <p class="promo__form-subtitle">Попробуй любые направлния бесплатно</p>
+      <form class="form pace__lesson" action="" method="post">
 
     <input type="text" placeholder="Имя" name="name" />
     <input type="text" placeholder="Телефон" name="phone" />
+</form>
    
       <select name="direction" id="direction">
         <option disabled selected>Выберите направление</option>
@@ -194,8 +198,8 @@
       </select>
    
     <button>записаться</button>
-</form>
 </div>
+<!-- </div> -->
   
 </div></div>
    </section>
@@ -206,8 +210,8 @@
     
        <h2 class="school__tittle">В стенах школы</h2>
   
-      <div class="cont">
-        <span class="str1"></span>
+      <div class="container__video">
+        <span class="arrow-before"></span>
         <div class="school__video">
          <div class="school__video-text">
           <h3>Зимняя вишня</h3>
@@ -216,7 +220,7 @@
          </div>
        </div>
         
-        <span class="str2"></span>
+        <span class="arrow-after"></span>
       </div>
    
    </section>
@@ -225,9 +229,7 @@
      <h2 class="contact__title">Ждем тебя</h2>
      <p class="contact__address">СПб, 6-я Линия ВО 42</p>
      <div class="contact__tel"><a class="contact__tel-link" href="tel:+78125665656">+7 (812) 566 56 56</a></div>
-     <div class="map__container">
-       <div class="map" id="map" style="width: 289px; height: 216px"></div>
-     </div>
+      <div class="map" id="map" style="width: 289px; height: 216px"></div>
      <button class="promo__mobile-only-btn">вводный урок</button>
    </section>
    </div>
