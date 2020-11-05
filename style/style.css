@@ -190,6 +190,7 @@ img {
 
 .grow__vocals {
   background-image: url(../image/vocals.png);
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -206,6 +207,7 @@ img {
 
 .grow__quitar {
   background-image: url(../image/quitar.png);
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -220,6 +222,7 @@ img {
   max-width: 100%;
   margin-right: 76px;
   background-image: url(../image/piano.png);
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   font-size: 16px;
@@ -265,6 +268,7 @@ img {
 
 .pace__composition {
   background-image: url(../image/composition.png);
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 30px;
@@ -272,6 +276,7 @@ img {
 
 .pace__result {
   background-image: url(../image/result.png);
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 30px;  
@@ -282,6 +287,7 @@ img {
   margin-right: 76px;
   font-size: 16px;  
   background-image: url(../image/studio.png);
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 144px;  
@@ -371,12 +377,12 @@ img {
 .contact__tel {
    margin-bottom: 17px;
 }
-
+/*
 .map {
   margin-bottom: 16px;
   max-width: 100%;
   height: auto;
-}
+}*/
 
 @media (min-width: 1280px) {
 
@@ -439,10 +445,6 @@ img {
   display: block;
   padding-top: 106px;
  }
-
-/*.desktop-only {
-  display: flex;
-}*/
 
 .promo__desktop-only-title {
   font-family: Prata, serif;
@@ -527,10 +529,6 @@ img {
   margin-bottom: 90px;
 }
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
-}
 
 .col-1,
 .col-2,
@@ -544,8 +542,8 @@ img {
 .col-10,
 .col-11,
 .col-12 {
- /* padding-left: 15px;
-  padding-right: 15px;*/
+  margin-bottom: 30px;
+
 }
 
 .col-1 {
@@ -596,24 +594,30 @@ img {
   transform: rotate(-90deg);
 }
 
+.grow__vocals {
+  order: 2;
+  height: 100%;
+}
+
+.grow__quitar {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
 .grow__vocals-subtitle,
 .desktop-only {
 
 }
 
-/*.promo__info {
-  width: 850px;
-  margin-right: 50px;
-}*/
+.grow__quitar-subtitle,
+.desktop-only {
+  font-size: 16px;
+}
 
 .promo__form {
   display: block;
   width: 270px;
 }
-/*.grow__all,
-.grow__all-button {
-  
-}*/
 
 .grow__all-button,
 .pace__lesson-button {
