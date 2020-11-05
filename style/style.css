@@ -649,7 +649,9 @@ img {
 }
 
 .grow__lecture {
+  height: 270px;
   background-image: url(../image/lecture.png);
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
