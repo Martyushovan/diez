@@ -52,7 +52,9 @@ img {
   object-fit: cover;
 }
 
-.promo__desktop-only {
+.promo__desktop-only,
+.grow__piano-desktop-only,
+.piano-subtitle {
   display: none;
 }
 
@@ -81,6 +83,8 @@ img {
   display: block;
   /*position: relative;*/
   margin-bottom: 32px;
+
+
 }
 
 .header {
@@ -180,7 +184,9 @@ img {
   border: none;
 }
 
-.desktop-only {
+.desktop-only,
+.grow__piano-desktop.
+.piano-subtitle {
   display: none;
 }
 
@@ -211,6 +217,10 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+
+
+
 .piano {
   /*display: flex;*/
   /*width: 100%;*/
@@ -228,7 +238,11 @@ img {
   font-size: 16px;
 }
 
-.row__piano {
+.grow__lecture {
+  display: none;
+}
+
+.row__piano-mobile {
   width: 100%;
 }
 
@@ -381,12 +395,13 @@ img {
 .map {
   margin-bottom: 16px;
   max-width: 100%;
-  height: auto;
+  height: 216px;
 }
 
 @media (min-width: 1280px) {
 
-  .container {
+  .container,
+  .container-desk {
     margin: 0 auto;
     width: 1170px;
     padding-left: 0;
@@ -396,7 +411,9 @@ img {
   .mobile-only,
   .header__menu,
   .promo__mobile-only-btn,
-  .promo__mobile-only {
+  .promo__mobile-only,
+  .grow__piano-subtitle,
+  .row__piano {
   display: none;
 }
 
@@ -600,19 +617,43 @@ img {
   height: 100%;
 }
 
+.grow__piano {
+  height: 100%;
+}
+
 .grow__quitar {
   margin-left: 30px;
   margin-right: 30px;
 }
 
-.grow__vocals-subtitle,
-.desktop-only {
-
+.grow__piano-title-d {
+  font-size: 18px;
+  width: 100px;
 }
 
+.grow__piano-subtitle {
+  display: none;
+}
+
+.piano-subtitle {
+  margin: 0;
+  padding: 0 0px 56.2px 11px;
+}
+
+
 .grow__quitar-subtitle,
+.grow__piano-desktop-only,
+.piano-subtitle,
 .desktop-only {
   font-size: 16px;
+}
+
+.grow__piano-desktop {
+  height: 270px;
+   background-image: url(../image/piano1280.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .promo__form {
@@ -634,6 +675,7 @@ img {
   height: 100%;
   border: 0;
   box-shadow: none;
+  order: 3;
 }
 
 .card {
@@ -649,11 +691,14 @@ img {
 }
 
 .grow__lecture {
+  display: block;
   height: 270px;
+  min-width: 100%;
   background-image: url(../image/lecture.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-right: 30px;
 }
 
 .grow__lecture-subtitle {
