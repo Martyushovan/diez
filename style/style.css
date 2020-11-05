@@ -377,12 +377,12 @@ img {
 .contact__tel {
    margin-bottom: 17px;
 }
-/*
+
 .map {
   margin-bottom: 16px;
   max-width: 100%;
   height: auto;
-}*/
+}
 
 @media (min-width: 1280px) {
 
@@ -400,7 +400,8 @@ img {
   display: none;
 }
 
-  .row {
+  .row,
+  .row__piano {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 0;
