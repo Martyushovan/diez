@@ -8,29 +8,7 @@
   <link rel="stylesheet" type="text/css" href="style/style.css">
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/slick-theme.css">
-<!--   <script src="https://api-maps.yandex.ru/2.1/?apikey=4b8e52c5-ec31-469e-ac8a-e7af9c1a87a5&lang=ru_RU" type="text/javascript">
-    </script>
-     <script>
-    ymaps.ready(init);
 
-    function init() {
-      var place = [59.94197592576683, 30.279586315155033];
-      var myMap = new ymaps.Map("map", {
-        center: place,
-        zoom: 16
-      }, {
-        searchControlProvider: 'yandex#search'
-      });
-
-      myMap.geoObjects.add(new ymaps.Placemark(place, {
-        balloonContent: ''
-      }, {
-        preset: 'islands#icon',
-        iconColor: '#000'
-      }));
-    }
-
-  </script> -->
   </head>
 <body>   
 
@@ -43,10 +21,10 @@
        <div class="header__logo">Diez</div>
        <button id="nav-toggle" class="header__menu" type="button"><span class="header__menu-btn"></span></button>
        <nav class="header__nav" id="nav">
-        <a class="header__nav-item">направления</a>
-        <a class="header__nav-item">о школе</a>
-        <a class="header__nav-item">видео</a>
-        <a class="header__nav-item">контакты</a>
+        <a class="header__nav-item" href="#">направления</a>
+        <a class="header__nav-item" href="#">о школе</a>
+        <a class="header__nav-item" href="#">видео</a>
+        <a class="header__nav-item" href="#">контакты</a>
        </nav>
       </div>
      </div>
@@ -96,25 +74,27 @@
 
   <section class="grow">
    <div class="container">
-    <h2 class="grow__desktop-only">Растим музыкантов</h2>
+   
+      <h2 class="grow__desktop-only">Растим музыкантов</h2>
+  
     <div class="row">
         
 
-<div class="grow__vocals col-6">
+<div class="grow__vocals">
   
     <article class="card">
       <h3 class="grow__vocals-title">Вокал</h3>
       <p class="grow__vocals-subtitle mobile-only">Пой как Селин Дион и Эми Вайнхаус</p>
-      <p class="grow__vocals-subtitle desktop-only">Академический рок, эстрадный джазовый</p>
+      <p class="vocals-subtitle">Академический рок, эстрадный джазовый</p>
     </article>
 </div>
 
 <div class="grow__quitar col-5">
   
-    <article class=" card">
+    <article class="card">
       <h3 class="grow__quitar-title">Гитара</h3>
       <p class="grow__quitar-subtitle">Начни играть как Джими Хендрикс</p>
-      <p class="grow__quitar-subtitle desktop-only">Хочешь играть как Джими Хендрикс, Би Би Кинг, Андрес Сегодия - мы научим</p>
+      <p class="quitar-subtitle desktеop-only">Хочешь играть как Джими Хендрикс, Би Би Кинг или Андрс Сегодия - мы научим</p>
       <span class="grow__quitar-price desktop-only">1 урок от 800р</span>
     </article>
 </div>
@@ -126,25 +106,26 @@
           <div class="row__piano">
           
         
-         <div class="col-5">
+         
             <article class="grow__piano">
          <h3 class="grow__piano-title">Фортепиано</h3>
          <p class="grow__piano-subtitle">Чувствуй клавиши, как Людовико Эйнауди</p>
-         <p class="piano-subtitle">йцукен</p>
+         <p class="piano-subtitle">Академический, рок, эстрадный, джазовый</p>
        </article>
-         </div>
-       <div class="col-3">
+       
+
+       
          <article class="grow__lecture">
        <h3 class="grow__lecture-title">Лекции</h3>
        <p class="grow__lecture-subtitle">Подтяни свои знания в теории музыки</p>
      </article>
-       </div>
+      
       
        
-         <div class="col-3">
+        
            <button class="grow__all-button">все направления
       </button>
-         </div>
+       
        
         </div>
        
@@ -156,7 +137,8 @@
    </section>
 
    <section class="pace">
-<div class="container"><div class="row">
+<div class="container">
+  <div class="row">
   
 
     <h2 class="pace__title">Задаем темп</h2>
@@ -166,6 +148,7 @@
     <article class="pace__composition">
       <h3 class="pace__composition-title">Состав</h3>
       <p class="pace__composition-subtitle">Учись только у префессионалов</p>
+      <p class="composition-subtitle">Тебя будут обучать профессионалы с высшим музыкальным образованием</p>
     </article>
 </div>
 
@@ -174,43 +157,41 @@
     <article class="pace__result">
       <h3 class="pace__result-title">Результат</h3>
       <p class="pace__result-subtitle">Выступай на отчетных концертах</p>
+      <p class="result-subtitle">Выступи на отчетном концерте через три месяца обучения</p>
     </article>
 </div>
 
-<!-- <div class="col-3"> -->
-  
-      <article class="pace__studio ">
+      <article class="pace__studio">
        <h3 class="pace__studio-title">Студия</h3>
        <p class="pace__studio-subtitle">Записывай песни каждый месяц</p>
+       <p class="studio-subtitle">Запиши свою песню в нашей студии звукозаписи, одна песня в месяц бесплатно</p>
       </article>
-<!-- </div> -->
-
-<!-- <div class="col-3"> -->
-  
-              <button class="pace__lesson-button">вводный урок</button>
+      <button class="pace__lesson-button">вводный урок</button>
      
 
      
-<div class="promo__form">
-  
-    <h2>Вводный урок</h2>
-    <p class="promo__form-subtitle">Попробуй любые направлния бесплатно</p>
-      <form class="form pace__lesson" action="" method="post">
 
-    <input type="text" placeholder="Имя" name="name" />
-    <input type="text" placeholder="Телефон" name="phone" />
+  <form action="" method="post">
+  
+    <div class="pace__form">
+      <h2 class="pace__form-title">Вводный урок</h2>
+    <p class="pace__form-subtitle">Попробуй любые направлния бесплатно</p>
+ 
+
+    <input class="pace__form-input" type="text" placeholder="Имя" name="name" />
+    <input class="pace__form-input" type="text" placeholder="Телефон" name="phone" />
 </form>
    
-      <select name="direction" id="direction">
-        <option disabled selected>Выберите направление</option>
+      <select class="pace__form-input pace__form-select" name="direction" id="direction">
+        <option disabled selected>Направление</option>
         <option value="0">Вокал</option>
         <option value="1">Гитара</option>
-        <option value="2"></option>
-        <option value="3"></option>
+        <option value="2">Фортепиано</option>
       </select>
    
-    <button>записаться</button>
+    <button class="pace__form-btn">записаться</button>
 </div>
+    <!-- </div>   -->
 <!-- </div> -->
   
 </div></div>
@@ -226,30 +207,89 @@
         <span class="arrow-before"></span>
         <div class="school__video">
          <div class="school__video-text">
-          <h3>Зимняя вишня</h3>
+          <h3 class="school__video-title">Зимняя вишня</h3>
           <p class="school__video-subtitle">Финальный концерт 2018 года</p>
+          <p class="video-subtitle">Заключительный зимний концерт 2017 года выступало 97 учеников</p>
           <span class="play"></span>
          </div>
        </div>
         
         <span class="arrow-after"></span>
       </div>
+      <div class="video-desk">
+        <div class="school__video-mini1">
+        <div class="yang">
+          <h3 class="yang__title">Янг Чжо</h3>
+          <p class="yang__subtitle">Репетиция сольной партии скрипки</p>
+          <span class="play__min"></span>          
+        </div>
+      </div>
+      <div class="school__video-mini2">
+        <div class="summer">
+          <h3 class="summer__title">Летний штиль</h3>
+          <p class="summer__subtitle">За кулисами концерта</p>
+          <span class="play__min"></span>
+        </div>
+      </div>
+      <div class="school__video-mini3">
+        <div class="trofimov">
+          <h3 class="trofimov__title">Сергей Трофимов</h3>
+          <p class="trofimov__subtitle">ЛЮБЭ - выйду в поле с конем</p>
+          <span class="play__min"></span>
+        </div>
+      </div>
+      </div>
    
    </section>
 
-   <section class="contact">
+   <div class="row">
+     
+     <section class="contact">
      <h2 class="contact__title">Ждем тебя</h2>
      <p class="contact__address">СПб, 6-я Линия ВО 42</p>
      <div class="contact__tel"><a class="contact__tel-link" href="tel:+78125665656">+7 (812) 566 56 56</a></div>
-     <!--  <div class="map" id="map" style="width: 289px; height: 216px"></div> --><div class="map"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac6adab09407c9e708d6755e890b112bcb11c73a1282e08e1824c2af80ce2e482&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
+    <div class="map"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac6adab09407c9e708d6755e890b112bcb11c73a1282e08e1824c2af80ce2e482&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
 
  </div>
      <button class="promo__mobile-only-btn">вводный урок</button>
+
+      <form action="" method="post">
+  
+    <div class="contact__form">
+      <h2 class="contact__form-title">Вводный урок</h2>
+    <p class="contact__form-subtitle">Попробуй любые направлния бесплатно</p>
+     <!--  <form class="form pace__lesson" action="" method="post"> -->
+
+    <input class="contact__form-input" type="text" placeholder="Имя" name="name" />
+    <input class="contact__form-input" type="text" placeholder="Телефон" name="phone" />
+</form>
+   
+      <select class="contact__form-input contact__form-select" name="direction" id="direction">
+        <option class="select" disabled selected>Направление</option>
+        <option value="0">Вокал</option>
+        <option value="1">Гитара</option>
+        <option value="2">Фортепиано</option>
+      </select>
+   
+    <button class="contact__form-btn">записаться</button>
+</div>
+
    </section>
+   </div>
+
    </div>
     
 
   </main>
+
+  <footer>
+  <div class="social">
+    <a class="social-youtube" href="#">youtube</a>
+    <a class="social-instagram" href="#">instagram</a>
+    <a class="social-facebook" href="#">facebook</a>
+    <a class="social-vkontakte" href="#">vkontakte</a>
+  </div>
+  </footer>
 
   <script src="js/jquery-3.5.1.min.js"></script>
   <script src="js/slick.min.js"></script>
